@@ -4,11 +4,14 @@ public class SentenceGenerator {
 
     ArrayList<Rule> rules = new ArrayList<Rule>();
    
-    Rule r1 = new Rule('F', "FF+[+F-F-F]-[-F+F+F]");
+    Rule r1 = new Rule('F',"F+f-FF+F+FF+Ff+FF-f+FF-F-FF-Ff-FFF");
+    Rule r2 = new Rule('f',"ffffff");
+
 
     public String generate(String sentence){
         String nextSentence = "";
         rules.add(r1);
+        rules.add(r2);
 
         for(Integer i=0;i<sentence.length();i++){
             Character currentChar = sentence.charAt(i);

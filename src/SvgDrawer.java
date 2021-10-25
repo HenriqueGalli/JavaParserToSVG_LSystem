@@ -4,9 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class NovoSvgDrawer {
+public class SvgDrawer {
     public void draw(String sentence) throws IOException{
-
 
         File f = new File("draw.html");
         BufferedWriter bw = new BufferedWriter(new FileWriter(f));
@@ -16,7 +15,7 @@ public class NovoSvgDrawer {
         Integer xFinal = xInicial;
         Integer yFinal = yInicial;
         Integer anguloDesenho = 90;
-        Integer angulo = 90;
+        Integer anguloInicial = 90;
         Integer tamanho = 30;
         Boolean horizontal = false;
         Integer direcao = -1;
@@ -51,20 +50,20 @@ public class NovoSvgDrawer {
                 }
 
             }else if(currentChar == '+'){
-                angulo += 90;
+                anguloInicial += 90;
                
-                if(angulo ==360){
-                    angulo = 0;
+                if(anguloInicial ==360){
+                    anguloInicial = 0;
                 }
 
-                if(angulo == 90 || angulo == 270){
+                if(anguloInicial == 90 || anguloInicial == 270){
                     horizontal = false;
                 }
                 else{
                     horizontal = true;
                 }
 
-                if(angulo == 0 || angulo == 270){
+                if(anguloInicial == 0 || anguloInicial == 270){
                     direcao = 1;
                 }  
                 else{
@@ -73,19 +72,19 @@ public class NovoSvgDrawer {
                     
             }else if(currentChar == '-'){
                
-                angulo -= 90;
+                anguloInicial -= 90;
 
-                if(angulo < 0)
-                    angulo = 270;
+                if(anguloInicial < 0)
+                    anguloInicial = 270;
 
-                if(angulo == 90 || angulo == 270){
+                if(anguloInicial == 90 || anguloInicial == 270){
                     horizontal = false;
                 }   
                 else{
                     horizontal = true;
                 }
 
-                if(angulo == 0 || angulo == 270){
+                if(anguloInicial == 0 || anguloInicial == 270){
                     direcao = 1;
                 } 
                 else{

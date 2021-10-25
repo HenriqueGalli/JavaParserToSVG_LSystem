@@ -1,18 +1,12 @@
-## Getting Started
+Σ   ☞ Alfabeto da linguagem
+n   ☞ Passos, etapas
+ω   ☞ Axioma, condição inicial
+δ   ☞ Angulo
+pX  ☞ Regras de produção
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Σ : f, F, +, -
+n : 2
+ω : F+F+F+F
+δ : 90º
+p1 : F → F+f-FF+F+FF+Ff+FF-f+FF-F-FF-Ff-FFF
+p2 : R → ffffff
